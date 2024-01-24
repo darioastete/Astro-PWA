@@ -13,7 +13,7 @@ try {
   // eslint-disable-next-line global-require
   supportsColor = require('supports-color');
 } catch (error) {
-  // DO NOTHING
+  // Do nothing
   // on MODULE_NOT_FOUND when installed by pnpm
 }
 
@@ -25,7 +25,7 @@ const RED = colorSupported ? '\x1b[0;31m' : '';
 const GREEN = colorSupported ? '\x1b[0;32m' : '';
 const BLUE = colorSupported ? '\x1b[1;34m' : '';
 
-/** End Of Style, removes all attributes (formatting and colors) */
+/** End of style, removes all attributes (formatting and colors) */
 const EOS = colorSupported ? '\x1b[0m' : '';
 const BOLD = colorSupported ? '\x1b[1m' : '';
 
@@ -36,7 +36,7 @@ const branchName = require('child_process')
   .split('\n')[0];
 
 /*
- * DEVELOPER TODO: Change and update regex below according to your preferences.
+ * Developer Todo: Change and update regex below according to your preferences.
  */
 const pattern = /\[\S+?\]:\s+.+/g;
 const result = pattern.test(msg);
