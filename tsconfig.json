@@ -4,7 +4,7 @@
     "types": [
       "astro/client",
       "vite-plugin-pwa/vanillajs",
-      "vite-plugin-pwa/info"
-    ]
-  }
+      "vite-plugin-pwa/info",
+    ],
+  },
 }
